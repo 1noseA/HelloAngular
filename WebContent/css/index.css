@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.odd {
+	background-color: #EEE;
+}
+
+table, td {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+
+thead td {
+	background-color: #CCC;
+	font-weight: bold;
+}
