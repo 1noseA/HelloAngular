@@ -6,31 +6,12 @@
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/indexController.js"></script>
 <script type="text/javascript" src="js/angular-resource.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body ng-controller="helloApp">
+<body>
 
-	<table>
-		<thead>
-			<tr>
-				<td>empno</td>
-				<td>ename</td>
-				<td>job</td>
-				<td>hiredate</td>
-				<td>salary</td>
-				<td>deptno</td>
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat="emp in list" ng-class-odd="'odd'">
-				<td>{{emp.empno}}</td>
-				<td>{{emp.ename}}</td>
-				<td>{{emp.job}}</td>
-				<td>{{emp.hiredate | date : "yyyy/MM/dd"}}</td>
-				<td>{{emp.salary | number}}</td>
-				<td>{{emp.deptno}}</td>
-		</tbody>
-	</table>
+	<div ng-view></div>
 
 </body>
 </html>

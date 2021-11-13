@@ -1,0 +1,23 @@
+<table>
+	<thead>
+		<tr>
+			<td>empno</td>
+			<td>ename</td>
+			<td>job</td>
+			<td>hiredate</td>
+			<td>salary</td>
+			<td>deptno</td>
+			<td>edit</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="emp in list" ng-class-odd="'odd'">
+			<td>{{emp.empno}}</td>
+			<td>{{emp.ename}}</td>
+			<td>{{emp.job}}</td>
+			<td>{{emp.hiredate | date : "yyyy/MM/dd"}}</td>
+			<td>{{emp.salary | number}}</td>
+			<td>{{emp.deptno}}</td>
+			<td><a ng-href="#/edit/{{emp.empno}}">edit</a></td>
+	</tbody>
+</table>
